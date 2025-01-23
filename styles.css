@@ -1,0 +1,333 @@
+@font-face {
+    font-family: Young-Serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf),
+        url(assets/fonts/outfit/static/Outfit-Black.ttf),
+        url(assets/fonts/outfit/static/Outfit-Bold.ttf),
+        url(assets/fonts/outfit/static/Outfit-ExtraBold.ttf),
+        url(assets/fonts/outfit/static/Outfit-ExtraLight.ttf),
+        url(assets/fonts/outfit/static/Outfit-Light.ttf),
+        url(assets/fonts/outfit/static/Outfit-Medium.ttf),
+        url(assets/fonts/outfit/static/Outfit-Regular.ttf),
+        url(assets/fonts/outfit/static/Outfit-SemiBold.ttf),
+        url(assets/fonts/outfit/static/Outfit-Thin.ttf)
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --stone: hsl(30, 54%, 90%);
+    --stone-light: hsl(30, 18%, 87%);
+    --stone-medium: hsl(30, 10%, 34%);
+    --stone-black: hsl(24, 5%, 18%);
+    --brown: hsl(14, 45%, 36%);
+    --rose-hard: hsl(332, 51%, 32%);
+    --rose: hsl(330, 100%, 98%);
+}
+
+body{
+    background: var(--stone-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Young-Serif, Outfit;
+}
+
+main{
+    background: var(--white);
+    margin: 20px;
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+main header{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+}
+
+main header .image-recipe{
+    width: 100%;
+    border-radius: 15px;
+}
+
+main .container #resume{
+    padding-top: 30px;
+}
+
+main .container #resume h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--stone-black);
+    margin-bottom: 10px;
+}
+
+main .container #resume p{
+    font-size: 11px;
+    font-family: Outfit;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: var(--brown);
+}
+
+main .container #preparation{ 
+    font-family: Outfit;   
+    padding: 20px;
+    background: var(--rose);
+    margin-bottom: 20px;
+}
+
+main .container #preparation h2{    
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--rose-hard);
+}
+
+main .container #preparation ul li{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: var(--rose-hard);
+}
+
+
+main .container #preparation ul li .title{
+    display: inline;
+    font-weight: 600;
+    color: var(--brown);
+}
+main .container #preparation ul li p{
+    font-weight: 400;
+    display: inline;
+    color: var(--brown);
+}
+
+main .container #ingredients{
+    padding: 10px;
+}
+
+main .container #ingredients h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--brown);
+}
+
+main .container #ingredients ul li{
+    margin-left: 20px;
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: var(--brown);
+}
+
+hr{
+    border: none; /* Quita el borde predeterminado */
+    border-top: 1px solid var(--stone-light); /* Línea delgada de color café */
+    margin: 5px 0; /* Espaciado opcional */
+    width: 100%; /* Ancho completo */
+}
+
+main .container #instructions {
+    padding: 10px;
+}
+
+main .container #instructions h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .container #instrutions ol{    
+    list-style-type: decimal;    
+}
+
+main .container #instructions ol li{   
+    font-family: Outfit;
+    padding-left: 10px;
+    font-size: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-bottom: 5px; 
+    font-weight: 600;
+    color: var(--brown);
+}
+
+main .container #instructions ol li .title{      
+    font-size: 11px;
+    font-weight: 700;
+    display: inline;
+    color: var(--stone-medium);
+}
+
+main .container #instructions ol li p{  
+    font-size: 10px;  
+    font-weight: 400;
+    display: inline;
+    color: var(--stone-medium);
+}
+
+main .container #nutrition{
+    padding: 10px;
+}
+
+main .container #nutrition h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .container #nutrition p{
+    font-size: 11px;
+    text-align: justify;
+    color: var(--brown);
+    font-weight: 400;
+    font-family: Outfit;
+}
+
+main .container #nutrition table{    
+    font-family: Outfit;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+main .container #nutrition table tbody {
+    margin-left: 200px;
+}
+
+main .container #nutrition table tbody tr .style-celd{
+    border-bottom: 1px solid var(--stone-light);
+}
+
+main .container #nutrition table tbody tr .title-celd{
+    font-size: 12px;
+    color: var(--brown);
+}
+
+main .container #nutrition table tbody tr .portion{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--brown);
+}
+
+.attribution footer{
+    font-family: Outfit;
+    font-size: 12px;
+}
+
+.attribution footer p{
+    display: inline;
+}
+
+.attribution footer a{
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 375px) {
+    main{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    main header{
+        width: 100%;
+    }
+
+    main header .image-recipe{
+        border-radius: 0;
+    }
+
+    main .container #resume h1{
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    main .container #resume p{
+        padding: 5px;
+        font-size: 10px;
+        font-family: Outfit;
+        text-align: justify;
+        margin-bottom: 5px;
+        color: var(--brown);
+    }
+
+    main .container #preparation{        
+        margin-bottom: 5px;
+    }
+
+    main .container #preparation h2{
+        font-size: 13px;
+    }
+
+    main .container #preparation ul li{
+        margin-left: 20px;
+        margin-bottom: 5px;
+        font-size: 10px;
+        color: var(--rose-hard);
+    }
+
+    main .container #ingredients{
+        padding: 10px;
+    }
+
+    main .container #ingredients h2{
+        font-size: 13px;
+    }
+
+    main .container #ingredients ul li{
+        font-size: 10px;
+    }
+    
+    hr{
+        border: none;
+    }
+
+    main .container #instructions h2{
+        font-size: 13px;
+    }
+
+    main .container #instructions ol li .title{          
+        font-size: 10px;
+    }
+
+    main .container #nutrition h2{
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    main .container #nutrition p{
+        font-size: 10px;
+    }
+
+    main .container #nutrition table tbody tr .title-celd{
+        font-size: 10px;
+    }
+
+    main .container #nutrition table tbody tr .portion{
+        font-size: 10px;
+    }
+
+    .attribution footer{
+        margin-top: 10px;
+        text-align: center;
+        width: 200px;
+    }
+}
